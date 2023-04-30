@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>주소 API 연동</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='open-api.js'></script>
+</head>
+<body>
+    <div>
+        <select id="searchType">
+            <option value="" selected="selected">검색구분</option>
+            <option value="dong">동</option>
+            <option value="road">도로명</option>
+            <option value="post">우편번호</option>
+        </select>
+    </div>
+    <input type="text" id="searchWord" placeholder="검색어를 입력해주세요.">
+    <button onclick="searchAddress()">검색</button>
+
+    <table id="address-table">
+        <thead>
+            <th>우편번호</th>
+            <th>도로명주소</th>
+            <th>지번주소</th>
+        </thead>
+        <tbody id="address-table-body"></tbody>
+    </table>
+    
+</body>
+</html>
