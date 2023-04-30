@@ -1,2 +1,2 @@
-# open-api-example
-SW일경험 수련과정 open-api 연동
+# SW일경험 수련과정 
+공공데이터포털 도로명주소조회 API 연동코드
