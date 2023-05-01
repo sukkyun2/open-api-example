@@ -1,5 +1,5 @@
 const apiUrl = 'http://openapi.epost.go.kr/postal/retrieveNewAdressAreaCdService/retrieveNewAdressAreaCdService/getNewAddressListAreaCd';
-const serviceKey = 'NDiq6zYeOQ65ExipfrCFE%2FLCZig6vDBqcCkwkXWGgFSL%2BZokU2nGJgzHH2lVscm%2BWuXevNugFWflPDUB5B0gjg%3D%3D';
+const serviceKey = '';
 
 
 const searchAddress = () => {
@@ -23,6 +23,10 @@ const createReq = () => {
 }
 
 const validate = (req) => {
+    if(!serviceKey){
+        throw '발급받은 서비스키를 추가해주세요';
+    }
+    
     const errors = [];
 
     if(!req){
